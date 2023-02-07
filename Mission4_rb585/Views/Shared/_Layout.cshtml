@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="../wwwroot/img/flower icon.png" type="image/icon type">
+    <link href="../wwwroot/css/StyleSheet.css" rel="stylesheet" />
+    <link href="../wwwroot/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Mission5" asp-action="Index">Home</a>
+        <a asp-controller="Mission5" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="../wwwroot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../wwwroot/lib/jQuery/jquery-3.6.3.min.js"></script>
+    <script src="../wwwroot/jsfiles/GradeCalculator.js"></script>
+</body>
+</html>
